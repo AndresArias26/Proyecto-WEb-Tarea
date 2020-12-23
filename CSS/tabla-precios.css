@@ -1,0 +1,67 @@
+body{
+    font-family: 'Ubuntu', sans-serif; /*Ponemos el tipo de letra en este caso lo aplico a todo el documento, video 23*/
+}
+h2{
+    font-weight: 400;
+}
+p{
+    font-weight: 300;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center; /*Para centrar los textos */
+}
+.columna{
+    background: rgb(228,228,228);
+    color: #333;
+    border:1px solid #333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px; /*Para redondear los bordes*/
+    box-shadow: 10px 10px 5px rgb(145, 189, 185);
+    width: 23%;
+    box-sizing: border-box;
+}
+.precio{
+    font-size: 50px;
+    color: #f30202;
+}
+.btn-precio{
+    background: #fdb827;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+}
+
+.btn-precio:hover{
+    background: rgba(199, 197, 101, 0.986);
+}
+.btn-precio:active{
+    background:#81b214 ;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+@media (max-width:1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
